@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Learning Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">DevOps<span>Hub</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#courses">Learn</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="tag">YOUR CLOUD JOURNEY STARTS HERE</p>
+      <h1>Build. Deploy.<br><span>Automate.</span></h1>
+      <p class="intro">
+        Learn cloud computing and DevOps through simple,
+        practical topics. Start building your skills today.
+      </p>
+      <a class="button" href="#courses">Explore Topics →</a>
+    </section>
+
+    <section class="courses" id="courses">
+      <p class="tag">LEARN THE ESSENTIALS</p>
+      <h2>Explore DevOps Topics</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">☁️</div>
+          <h3>Microsoft Azure</h3>
+          <p>Explore cloud services, virtual machines, networking and cloud hosting.</p>
+          <a href="https://learn.microsoft.com/en-us/azure/" target="_blank" rel="noopener noreferrer">Start learning ↗</a>
+        </article>
+        <article class="card">
+          <div class="emoji">🐳</div>
+          <h3>Docker</h3>
+          <p>Learn containers, images and how to package applications.</p>
+          <a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener noreferrer">Start learning ↗</a>
+        </article>
+        <article class="card">
+          <div class="emoji">☸️</div>
+          <h3>Kubernetes</h3>
+          <p>Understand pods, deployments, services and container orchestration.</p>
+          <a href="https://kubernetes.io/docs/tutorials/" target="_blank" rel="noopener noreferrer">Start learning ↗</a>
+        </article>
+        <article class="card">
+          <div class="emoji">🔄</div>
+          <h3>CI/CD Pipelines</h3>
+          <p>Automate building, testing and deploying your applications.</p>
+          <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/" target="_blank" rel="noopener noreferrer">Start learning ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>Learn by doing</h2>
+      <p>Small steps, practical projects and continuous improvement.</p>
+      <button class="button" id="welcomeBtn">Get a welcome message</button>
+      <p id="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> DevOps Learning Hub · Built for learners</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
