@@ -24,6 +24,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Verify static website files
+        run: |
+          test -f index.html || (echo "ERROR: index.html not found in repository root" && exit 1)
+          echo "Static website files found:"
+          ls -la
+
       - name: Deploy static website
         uses: Azure/static-web-apps-deploy@v1
         with:
